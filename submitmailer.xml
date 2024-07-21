@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade">
+	<name>plg_content_submit_mailer</name>
+	<creationDate>2016-07-01</creationDate>
+	<author>Tobias Zulauf</author>
+	<copyright>Copyright (C) 2024 Tobias Zulauf (jah-tz.de). All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorUrl>www.jah-tz.de</authorUrl>
+	<version>3-6</version>
+	<description><![CDATA[PLG_CONTENT_SUBMIT_MAILER_XML_DESCRIPTION]]></description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="submitmailer">submitmailer.php</filename>
+		<folder>language</folder>
+	</files>
+	<updateservers>
+		<server type="extension" name="SubmitMailer Update Site">https://raw.githubusercontent.com/zero-24/plg_content_submitmailer/master/update.xml</server>
+	</updateservers>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="article"
+					class="btn-group btn-group-yesno"
+					type="radio"
+					default="1"
+					filter="integer"
+					label="PLG_CONTENT_SUBMIT_MAILER_ARTICLE"
+					description="PLG_CONTENT_SUBMIT_MAILER_ARTICLE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="weblink"
+					class="btn-group btn-group-yesno"
+					type="radio"
+					default="1"
+					filter="integer"
+					label="PLG_CONTENT_SUBMIT_MAILER_WEBLINK"
+					description="PLG_CONTENT_SUBMIT_MAILER_WEBLINK_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="article_backend"
+					class="btn-group btn-group-yesno"
+					type="radio"
+					default="0"
+					filter="integer"
+					label="PLG_CONTENT_SUBMIT_MAILER_ARTICLE_BACKEND"
+					description="PLG_CONTENT_SUBMIT_MAILER_ARTICLE_BACKEND_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="mailto_admins"
+					class="btn-group btn-group-yesno"
+					type="radio"
+					default="1"
+					filter="integer"
+					label="PLG_CONTENT_SUBMIT_MAILER_MAILTO_ADMINS"
+					description="PLG_CONTENT_SUBMIT_MAILER_MAILTO_ADMINS_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="mailto_custom"
+					class="btn-group btn-group-yesno"
+					type="radio"
+					default="0"
+					filter="integer"
+					label="PLG_CONTENT_SUBMIT_MAILER_MAILTO_CUSTOM"
+					description="PLG_CONTENT_SUBMIT_MAILER_MAILTO_CUSTOM_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="custom_emails"
+					size="40"
+					class="span12"
+					type="text"
+					filter="text"
+					hint="PLG_CONTENT_SUBMIT_MAILER_CUSTOM_EMAIL_DEFAULT"
+					label="PLG_CONTENT_SUBMIT_MAILER_CUSTOM_EMAIL"
+					description="PLG_CONTENT_SUBMIT_MAILER_CUSTOM_EMAIL_DESC"
+				/>
+			</fieldset>
+
+			<fieldset name="Article">
+				<!-- Article -->
+				<field
+					name="subject_article"
+					size="40"
+					class="span12"
+					type="text"
+					filter="text"
+					hint="PLG_CONTENT_SUBMIT_MAILER_CONTENT_SUBJECT_DEFAULT"
+					label="PLG_CONTENT_SUBMIT_MAILER_SUBJECT"
+					description="PLG_CONTENT_SUBMIT_MAILER_SUBJECT_DESC"
+				/>
+
+				<field
+					name="body_article"
+					class="span12"
+					type="textarea"
+					rows="7"
+					cols="40"
+					filter="raw"
+					hint="PLG_CONTENT_SUBMIT_MAILER_CONTENT_BODY_DEFAULT"
+					label="PLG_CONTENT_SUBMIT_MAILER_BODY"
+					description="PLG_CONTENT_SUBMIT_MAILER_CONTENT_BODY_DESC"
+				/>
+			</fieldset>
+			<fieldset name="Weblink">
+				<!-- Weblink -->
+				<field
+					name="subject_weblink"
+					size="40"
+					class="span12"
+					type="text"
+					filter="text"
+					hint="PLG_CONTENT_SUBMIT_MAILER_WEBLINK_SUBJECT_DEFAULT"
+					label="PLG_CONTENT_SUBMIT_MAILER_SUBJECT"
+					description="PLG_CONTENT_SUBMIT_MAILER_SUBJECT_DESC"
+				/>
+				<field
+					name="body_weblink"
+					class="span12"
+					type="textarea"
+					rows="7"
+					cols="40"
+					filter="raw"
+					hint="PLG_CONTENT_SUBMIT_MAILER_WEBLINK_BODY_DEFAULT"
+					label="PLG_CONTENT_SUBMIT_MAILER_BODY"
+					description="PLG_CONTENT_SUBMIT_MAILER_WEBLINK_BODY_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

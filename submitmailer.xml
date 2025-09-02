@@ -6,7 +6,7 @@
 	<copyright>Copyright (C) 2024 Tobias Zulauf (jah-tz.de). All rights reserved.</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorUrl>www.jah-tz.de</authorUrl>
-	<version>3-6</version>
+	<version>3-7</version>
 	<description><![CDATA[PLG_CONTENT_SUBMIT_MAILER_XML_DESCRIPTION]]></description>
 	<scriptfile>script.php</scriptfile>
 	<files>

@@ -46,7 +46,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-6/plg_content_submitmailer.zip</downloadurl>
 		</downloads>
-		<sha512>477e6092c377d5474b54208ac855f570af9fafdf071abec842d86582e81782383a0a5fa6c0a9cf766ba06cbae5e9167ee11374273a1851f31154847b2111b454</sha512>
+		<sha512>66aa465b68826ba0741d43be3eac3f4bad841b5a932fe278876d6b7dc1efed1fd357167fda6e3693ccf918738cb1c204624117293d33148c92e20297c18f8407</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -67,7 +67,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-6/plg_content_submitmailer.zip</downloadurl>
 		</downloads>
-		<sha512>477e6092c377d5474b54208ac855f570af9fafdf071abec842d86582e81782383a0a5fa6c0a9cf766ba06cbae5e9167ee11374273a1851f31154847b2111b454</sha512>
+		<sha512>66aa465b68826ba0741d43be3eac3f4bad841b5a932fe278876d6b7dc1efed1fd357167fda6e3693ccf918738cb1c204624117293d33148c92e20297c18f8407</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

@@ -205,6 +205,7 @@ class plgContentSubmitMailer extends CMSPlugin
 
 			// prepare email body
 			$this->body = str_replace('{username}', $this->user->get('username'), $this->body);
+			$this->body = str_replace('{name}', $this->user->get('name'), $this->body);
 			$this->body = str_replace('{category}', $category, $this->body);
 			$this->body = str_replace('{title}', $title, $this->body);
 			$this->body = str_replace('{introtext}', $introtext, $this->body);
@@ -262,6 +263,7 @@ class plgContentSubmitMailer extends CMSPlugin
 
 			// prepare email body
 			$this->body = str_replace('{username}', $this->user->get('username'), $this->body);
+			$this->body = str_replace('{name}', $this->user->get('name'), $this->body);
 			$this->body = str_replace('{category}', $category, $this->body);
 			$this->body = str_replace('{title}', $title, $this->body);
 			$this->body = str_replace('{weblink}', $link, $this->body);
@@ -270,6 +272,7 @@ class plgContentSubmitMailer extends CMSPlugin
 
 		// Prepare email subject
 		$this->sub = str_replace('{url}', Uri::base(), $this->sub);
+		$this->sub = str_replace('{sitename}', Factory::getApplication()->get('sitename'), $this->sub);
 	}
 	/**
 	 * This method set all vars for the Email Content like sub, body etc.

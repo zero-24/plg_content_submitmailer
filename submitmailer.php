@@ -17,14 +17,6 @@ use Joomla\CMS\Uri\Uri;
 class plgContentSubmitMailer extends CMSPlugin
 {
 	/**
-	 * Application object.
-	 *
-	 * @var    CMSApplication
-	 * @since  3-6
-	 */
-	protected $app;
-
-	/**
 	* Load the language file on instantiation.
 	*
 	* @var    boolean
@@ -79,7 +71,7 @@ class plgContentSubmitMailer extends CMSPlugin
 		$this->user    = Factory::getUser();
 		$this->db      = Factory::getDbo();
 		$params        = $this->params;
-		$this->app     = Factory::getApplication();
+
 		$this->article = $article;
 		$this->sub     = '';
 		$this->body    = '';
@@ -297,7 +289,7 @@ class plgContentSubmitMailer extends CMSPlugin
 
 			$mail = Factory::getMailer();
 			$mail->IsHTML(true);
-			$mail->setSender(array($this->app->get('mailfrom'), $this->app->get('fromname')));
+			$mail->setSender(array($this->getApplication()->get('mailfrom'), $this->getApplication()->get('fromname')));
 			$mail->addRecipient($email);
 			$mail->setSubject($this->sub);
 			$mail->setBody($this->body);
@@ -319,7 +311,7 @@ class plgContentSubmitMailer extends CMSPlugin
 					$error_body = Text::sprintf('PLG_CONTENT_SUBMIT_MAILER_WEBLINK_ERROR_BODY', Uri::base());
 				}
 
-				mail($this->app->get('mailfrom'), $error_sub, $error_body, $this->app->get('fromname'));
+				mail($this->getApplication()->get('mailfrom'), $error_sub, $error_body, $this->getApplication()->get('fromname'));
 
 				return;
 			}

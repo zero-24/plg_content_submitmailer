@@ -289,7 +289,7 @@ class plgContentSubmitMailer extends CMSPlugin
 
 			$mail = Factory::getMailer();
 			$mail->IsHTML(true);
-			$mail->setSender(array($this->getApplication()->get('mailfrom'), $this->getApplication()->get('fromname')));
+			$mail->setSender(array(Factory::getApplication()->get('mailfrom'), Factory::getApplication()->get('fromname')));
 			$mail->addRecipient($email);
 			$mail->setSubject($this->sub);
 			$mail->setBody($this->body);
@@ -311,7 +311,7 @@ class plgContentSubmitMailer extends CMSPlugin
 					$error_body = Text::sprintf('PLG_CONTENT_SUBMIT_MAILER_WEBLINK_ERROR_BODY', Uri::base());
 				}
 
-				mail($this->getApplication()->get('mailfrom'), $error_sub, $error_body, $this->getApplication()->get('fromname'));
+				mail(Factory::getApplication()->get('mailfrom'), $error_sub, $error_body, Factory::getApplication()->get('fromname'));
 
 				return;
 			}

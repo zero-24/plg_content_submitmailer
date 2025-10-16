@@ -35,16 +35,16 @@
 		<maintainerurl>https://www.jah-tz.de</maintainerurl>
 		<targetplatform name="joomla" version="3.10"/>
 	<update>
-		<name>SubmitMailer 3-7</name>
-		<description>Joomla SubmitMailer Version 3-7</description>
+		<name>SubmitMailer 3-8</name>
+		<description>Joomla SubmitMailer Version 3-8</description>
 		<element>submitmailer</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>3-7</version>
+		<version>3-8</version>
 		<infourl title="SubmitMailer Plugin">https://github.com/zero-24/plg_content_submitmailer</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-7/plg_content_submitmailer.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-8/plg_content_submitmailer.zip</downloadurl>
 		</downloads>
 		<sha512>c7403f233460d58fbc5d34f0a3e916a998342d42e20484cf0d7826d5d59416de8aceefef81d48b7c647d17871d36dcab56cad6c9e321007f573abbcbd0cbbbb6</sha512>
 		<tags>
@@ -56,16 +56,16 @@
 		<targetplatform name="joomla" version="4.[01234]"/>
 	</update>
 	<update>
-		<name>SubmitMailer 3-7</name>
-		<description>Joomla SubmitMailer Version 3-7</description>
+		<name>SubmitMailer 3-8</name>
+		<description>Joomla SubmitMailer Version 3-8</description>
 		<element>submitmailer</element>
 		<type>plugin</type>
 		<folder>content</folder>
 		<client>site</client>
-		<version>3-7</version>
+		<version>3-8</version>
 		<infourl title="SubmitMailer Plugin">https://github.com/zero-24/plg_content_submitmailer</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-7/plg_content_submitmailer.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-8/plg_content_submitmailer.zip</downloadurl>
 		</downloads>
 		<sha512>c7403f233460d58fbc5d34f0a3e916a998342d42e20484cf0d7826d5d59416de8aceefef81d48b7c647d17871d36dcab56cad6c9e321007f573abbcbd0cbbbb6</sha512>
 		<tags>
@@ -74,6 +74,27 @@
 		<maintainer>Tobias Zulauf</maintainer>
 		<maintainerurl>https://www.jah-tz.de</maintainerurl>
 		<php_minimum>8.1.0</php_minimum>
-		<targetplatform name="joomla" version="5.[0123]"/>
+		<targetplatform name="joomla" version="5.[01234]"/>
+	</update>
+	<update>
+		<name>SubmitMailer 3-8</name>
+		<description>Joomla SubmitMailer Version 3-8</description>
+		<element>submitmailer</element>
+		<type>plugin</type>
+		<folder>content</folder>
+		<client>site</client>
+		<version>3-8</version>
+		<infourl title="SubmitMailer Plugin">https://github.com/zero-24/plg_content_submitmailer</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_content_submitmailer/releases/download/3-8/plg_content_submitmailer.zip</downloadurl>
+		</downloads>
+		<sha512>c7403f233460d58fbc5d34f0a3e916a998342d42e20484cf0d7826d5d59416de8aceefef81d48b7c647d17871d36dcab56cad6c9e321007f573abbcbd0cbbbb6</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Tobias Zulauf</maintainer>
+		<maintainerurl>https://www.jah-tz.de</maintainerurl>
+		<php_minimum>8.1.0</php_minimum>
+		<targetplatform name="joomla" version="6.0"/>
 	</update>
 </updates>

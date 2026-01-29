@@ -282,9 +282,9 @@ class plgContentSubmitMailer extends CMSPlugin
 		{
 			$email = trim($email);
 
-			if ($email == '')
+			if (empty($email))
 			{
-				return;
+				continue;
 			}
 
 			$mail = Factory::getMailer();

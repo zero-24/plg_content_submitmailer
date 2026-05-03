@@ -11,6 +11,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Application\CMSApplication;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Mail\MailerFactoryInterface;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Uri\Uri;
 
@@ -287,7 +288,7 @@ class plgContentSubmitMailer extends CMSPlugin
 				continue;
 			}
 
-			$mail = Factory::getMailer();
+			$mail = Factory::getContainer()->get(MailerFactoryInterface::class)->createMailer();
 			$mail->IsHTML(true);
 			$mail->setSender(array(Factory::getApplication()->get('mailfrom'), Factory::getApplication()->get('fromname')));
 			$mail->addRecipient($email);
